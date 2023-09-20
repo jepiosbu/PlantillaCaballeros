@@ -1,0 +1,99 @@
+.App
+{
+  width: 100vw;
+  height: 50vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+.containC
+{
+    width: 20vw;
+    height: 50vw;
+    background: radial-gradient(pink, gainsboro)
+}
+.containC2
+{
+    width: 20vw;
+    height: 50vw;
+    background: radial-gradient(orange, gainsboro)
+}
+.containC3
+{
+    width: 20vw;
+    height: 50vw;
+    background: radial-gradient(aqua, gainsboro)
+}
+.containC4
+{
+    width: 20vw;
+    height: 50vw;
+    background: radial-gradient(red, gainsboro)
+}
+.containC5
+{
+    width: 20vw;
+    height: 50vw;
+    background: radial-gradient(black, gainsboro)
+}
+.cubo
+{
+  transform-style: preserve-3d;
+  margin: auto;
+  width: 12vw;
+  height: 12vw;
+  position: relative;
+  top: 30vw;
+  animation: girar 5s infinite linear;
+  z-index: 1;
+}
+img
+{
+  margin: 0;
+  padding: 0;
+  width: 12vw;
+  height: 12vw;
+}
+.cara1
+{
+  position: relative;
+  transform: translateZ(-6vw);
+}
+.cara2
+{ 
+  position: relative;
+  bottom: 12.2vw;
+  left: 6vw;
+  transform: rotateY(90deg);
+}
+.cara3
+{
+  position: relative;
+  bottom: 24.4vw;
+  right: 6vw;
+  transform: rotateY(90deg);
+}
+.cara4
+{
+  position: relative;
+  bottom: 36.6vw;
+  transform: translateZ(6vw);
+
+}
+@keyframes girar {
+  from{
+    transform: rotateY(0deg);
+  }
+  to{
+    transform: rotateY(360deg);
+  }
+}
+.caballero
+{ 
+  transition: 5s;
+  position: relative;
+  left: 5vw;
+  top: 19vw;
+  width: 10vw;
+  height: 10vw;
+}
